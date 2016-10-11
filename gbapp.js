@@ -5,9 +5,12 @@ var bodyParser = require("body-parser");
 
 var app = express();  // make express app
 var server = require('http').createServer(app);
-
+app.get('/',function(req, res){
+res.send("Hello World!");
+});
 // set up the view engine
 // manage our entries
+app.set("view EJS",'EJS')
 // set up the logger
 // GETS
 // POSTS
